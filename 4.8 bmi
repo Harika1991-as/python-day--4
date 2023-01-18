@@ -1,0 +1,13 @@
+A=int(input("enter the height of the person in centimeters"))
+B=int(input("enter the weight of the person in kilograms"))
+C=A/100
+BMI=((B/(C*C)))
+D=float(BMI)
+if (D<18.5):
+    print("under weight",BMI)
+elif(D in range(float(18.5,24.9))):
+    print("normal weight",round(BMI,1))
+elif(D in range(float(24.9,29.9))):
+    print("over weight",round(BMI,1))
+elif(D >29.9):
+    print("heavy weight",round(BMI,1))
