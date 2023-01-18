@@ -1,0 +1,17 @@
+class solution:
+    def smaller(self,nums: list[int])->list[int]:
+        result=[]
+        for num in nums:
+            count=0
+            for comp in nums:
+                if num>comp:
+                    count+=1
+            result.append(count)
+        return result
+ob=solution()
+a=[]
+n=int(input("enter the number of elements"))
+for i in range (n):
+    b=int(input("enter the element"))
+    a.append(b)
+print(ob.smaller(a))
