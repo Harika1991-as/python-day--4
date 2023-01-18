@@ -1,0 +1,14 @@
+lst=[ ]
+sum=0
+n=int(input("enter the number of elements"))
+for j in range(n):
+    a=int(input("enter the element"))
+    lst.append(a)
+print(lst)
+b=int(input("enter the element to search"))
+if b in lst:
+    sum=sum+1
+    print(sum)
+else:
+    print("not exist")
+ 
