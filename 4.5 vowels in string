@@ -1,0 +1,16 @@
+def findNumberOfStrings(N):
+    counts = []
+    for i in range(5):
+        counts.append(1)
+   
+    for i in range(2, N + 1):
+        for j in range(3, -1, -1):
+            counts[j] += counts[j + 1]
+   
+    ans = 0
+    for c in counts:
+        ans += c
+    return ans
+ 
+N = int(input("enter the number"))
+print(findNumberOfStrings(N))
