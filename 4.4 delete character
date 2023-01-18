@@ -1,0 +1,6 @@
+s=input("enter the first string")
+t=input("enter the character to be deleted")
+for i in range(len(s)):
+               if(t  not in s[i]):
+                   print(s[i],end=" ")
+
