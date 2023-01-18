@@ -1,0 +1,7 @@
+n=int(input("enter the number of elements in the array"))
+A=[]
+for i in range(n):
+    a=int(input("enter the element"))
+    A.append(a)
+    A=A[-1:]+A[:-1]
+print(A)
