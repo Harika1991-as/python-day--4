@@ -1,0 +1,8 @@
+total_users=int(input("enter the total number of users"))
+staff_users=int(input("enter the number of staff users"))
+if(total_users>0) and (total_users!=staff_users) and (total_users>staff_users):
+    a=(staff_users//3)
+    b=(total_users-(staff_users+a))
+    print("student users : ",b)
+else:
+    print("Invalid input")
